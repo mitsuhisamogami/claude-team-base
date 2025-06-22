@@ -1,0 +1,83 @@
+# プロジェクト開発ルール
+
+development_workflow:
+  git_flow:
+    - "main/masterブランチは本番環境と同期"
+    - "developブランチで開発統合"
+    - "feature/xxx形式でブランチ作成"
+    - "作業完了後はPull Request作成"
+    - "レビュー承認後にマージ"
+  
+  commit_rules:
+    - "コミットメッセージは日本語または英語"
+    - "prefix使用: feat: fix: docs: style: refactor: test:"
+    - "1コミット1機能を心がける"
+    - "WIPコミットは最終的にsquash"
+  
+  branch_naming:
+    - "feature/機能名"
+    - "fix/修正内容"
+    - "hotfix/緊急修正"
+    - "docs/文書更新"
+
+code_standards:
+  formatting:
+    - "Prettierによる自動フォーマット"
+    - "ESLintルールに従う"
+    - "インデントは2スペース"
+    - "末尾セミコロンあり"
+  
+  naming_conventions:
+    - "変数・関数: camelCase"
+    - "定数: UPPER_SNAKE_CASE"
+    - "コンポーネント: PascalCase"
+    - "ファイル名: kebab-case"
+  
+  documentation:
+    - "JSDocコメントを関数に追加"
+    - "READMEは最新状態を保持"
+    - "APIエンドポイントは必ず文書化"
+
+testing_rules:
+  coverage:
+    - "新機能は必ずテスト作成"
+    - "カバレッジ80%以上を維持"
+    - "CIでテスト失敗時はマージ禁止"
+  
+  types:
+    - "Unit Test: 個別関数の動作確認"
+    - "Integration Test: API連携確認"
+    - "E2E Test: ユーザー操作フロー確認"
+
+deployment_rules:
+  environments:
+    - "development: 開発者個人環境"
+    - "staging: QA・確認環境"
+    - "production: 本番環境"
+  
+  process:
+    - "stagingで動作確認後に本番デプロイ"
+    - "本番デプロイは必ず承認フロー経由"
+    - "ロールバック手順を事前確認"
+
+security_guidelines:
+  secrets_management:
+    - "APIキーは環境変数で管理"
+    - ".envファイルはgitignoreに追加"
+    - "本番秘匿情報はクラウドサービス利用"
+  
+  data_handling:
+    - "個人情報の取り扱いに注意"
+    - "SQLインジェクション対策を実装"
+    - "CORS設定を適切に構成"
+
+communication_rules:
+  meetings:
+    - "デイリースタンドアップ: 毎朝10分"
+    - "レトロスペクティブ: スプリント終了時"
+    - "技術共有会: 隔週開催"
+  
+  documentation:
+    - "仕様変更は必ずドキュメント更新"
+    - "アーキテクチャ決定記録(ADR)を残す"
+    - "ナレッジは社内Wikiに蓄積"
