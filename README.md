@@ -195,12 +195,12 @@ rm -f ./tmp/*_done.txt
 
 ## 🙏 参考・謝辞
 
-このプロジェクトは以下のリポジトリを参考にさせていただきました：
+このプロジェクトは以下のリポジトリを参考・フォークして開発されました：
 
-- [Akira-Papa/Claude-Code-Communication](https://github.com/Akira-Papa/Claude-Code-Communication)
-- [nishimoto265/Claude-Code-Communication](https://github.com/nishimoto265/Claude-Code-Communication)
+- [nishimoto265/Claude-Code-Communication](https://github.com/nishimoto265/Claude-Code-Communication) (フォーク元)
+- [Akira-Papa/Claude-Code-Communication](https://github.com/Akira-Papa/Claude-Code-Communication) (参考)
 
-素晴らしいアイデアとベースを提供していただき、ありがとうございます。
+オリジナルのアイデアとベースを提供していただき、ありがとうございます。
 
 ---
 
